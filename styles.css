@@ -1,0 +1,254 @@
+@font-face {
+    src: url("./Helvetica Inserat LT.ttf");
+    src: url("tahoma.ttf");
+}
+    body {
+        background-color: rgb(255, 255, 255);
+        margin: 0.5em;
+        margin-left: 0;
+
+        font-family: "Tahoma";
+        display: flex;
+        flex-direction: row;
+        padding-right: 3em;
+        min-width: 800px;
+        max-width: 1280px;
+
+    }
+
+    header{
+        background: rgb(204, 204, 204);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5em;
+    }
+
+    .navigation-header, .flags{
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .navigation-header{
+        padding-left: 0.5em;
+        margin-bottom: 0;
+    }
+
+    .flags{
+        margin: 0 0.3em 0 0;
+    }
+
+    .navigation-header li, .flags li{
+        list-style: none;
+        display: flex;
+        align-items: flex-end;
+    }
+.navigation-header li a:hover{
+    background: rgb(0, 0, 0);
+}
+    .navigation-header a, .flags a{
+        text-decoration: none;
+    }
+
+    .navigation-header a{
+        margin: 0 0.1em;
+        background: rgb(102, 102, 102);
+        color: rgb(255, 255, 255);
+        padding: 0.3em 2em;
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+    .navigation-header i{
+        font-size: 0.7em;
+        position: relative;
+        left: 2em;
+
+    }
+
+    .navigation-header ul{
+        position: absolute;
+        top: 88.636px;
+        left: 389px;
+        background: rgb(0, 0, 0);
+        padding: 0;
+        width: 10em;
+
+    }
+
+.navigation-header ul li{
+    padding-left: 0.2em;
+}
+.navigation-header ul li a{
+    background: rgb(0, 0, 0);
+    margin: 0;
+    font-size: 0.7em;
+    width: 69%;
+    border-bottom: 1px solid rgb(81, 81, 81);
+
+}
+
+    .flags a{
+        margin: 0.15em;
+    }
+
+
+
+    .flags img{
+        width: 1.7em;
+        height: 1em;
+        background: rgb(255, 255, 255);
+        padding: 0.05em;
+        border: 2px solid rgb(163, 163, 163);
+        border-radius: 3px;
+    }
+
+    #Great\ Britain{
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 3px;
+    }
+
+
+main{
+
+        margin-top: 0.5em;
+        display: grid;
+        grid-template-columns: 7fr 3fr;
+    }
+
+    .background-outside-atricle-text{
+        background: rgb(204, 204, 204);
+        padding: 0.5em;
+
+    }
+
+    .text{
+        background: rgb(81, 81, 81);
+        color: rgb(255, 255, 255);
+        padding: 1.5em;
+    }
+    .text p{
+        font-size: 12px;
+    }
+
+    h1{
+        font-family: "HelveticaInserat LT";
+        font-size: 3em;
+        font-weight: 500;
+        margin: 0;
+        padding-bottom: 0.1em;
+        border-bottom: 1px solid rgb(0, 0, 0);
+        -webkit-box-shadow: 0 4px 6px -6px rgb(204, 204, 204);
+        -moz-box-shadow: 0 4px 6px -6px rgb(204, 204, 204);
+        box-shadow: 0 4px 6px -6px rgb(204, 204, 204);
+    }
+
+    .info{
+        background: rgb(163, 163, 163);
+        padding: 0.5em;
+        display: flex;
+        flex-wrap: wrap;
+
+
+
+    }
+    .dark-gray-background{
+        background: rgb(81, 81, 81);
+        padding: 0.5em;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+    .info ul{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+    }
+
+    .info li{
+        list-style: none;
+        background: rgb(0, 0, 0);
+        margin: 1px 0 1px 0;
+        padding: 0.4em 0.7em;
+
+    }
+    .info span{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info a{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 0.7em;
+
+
+
+    }
+    .info p{
+        color: rgb(255, 255, 255);
+        background: rgb(0, 0, 0);
+        margin: 0;
+        font-size: 12px;
+    }
+    .info i{
+        color: rgb(255, 255, 255);
+        font-size: 0.7em;
+        display: flex;
+        justify-items: flex-end;
+
+    }
+
+    footer{
+        background: rgb(204, 204, 204);
+        color: rgb(81, 81, 81);
+        margin-top: 0.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-info{
+        margin-left: 1.5em;
+    }
+    .footer-info p{
+        font-size: 0.8em;
+        margin: 0 0.2em;
+    }
+    .footer-info, nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    footer nav ul{
+        margin: 0.7em 0;
+    }
+    footer nav li{
+        list-style: none;
+        margin-right: 1.5em;
+    }
+    footer nav li a{
+        font-size: 0.8em;
+        color: rgb(81, 81, 81);
+    }
+
+    .logo{
+        font-family: "HelveticaInserat LT";
+        background: rgb(145, 0, 0);
+        color: rgb(255, 255, 255);
+        height: 7em;
+        padding: 0.5em;
+        position: relative;
+        top: 3em;
+        margin-right: 2em;
+    }
+    .logo p{
+        margin: 0.1em 0;
+        font-size: 1.4em;
+        font-weight: 900;
+
+    }
+
+
