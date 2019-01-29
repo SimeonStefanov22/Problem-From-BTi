@@ -52,5 +52,37 @@ $(document).ready(function () {
 
 
 
+    //click flag
+     $(".flags img").on("click", function () {
+
+         $(".flags img").css({"border": "2px solid rgb(163, 163, 163)"})
+         $(this).css({"border": "2px solid rgb(0, 0, 0)"})
+         $(this).unbind("mouseenter mouseleave");
+
+     })
+
+
+
+        //hover flag
+    $(".flags img").hover(function () {
+          $(this).css({"border": "2px solid rgb(0, 0, 0)"})
+      },
+      function () {
+
+          $(this).css({"border": "2px solid rgb(163, 163, 163)"})
+
+   });
+
+
+
+
+
+
+
+
+
+
+
+
 
 })
