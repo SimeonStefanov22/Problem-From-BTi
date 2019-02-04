@@ -61,15 +61,47 @@
     }
     .navigation-header i{
         font-size: 0.7em;
-        position: relative;
-        left: 2em;
-
     }
+.navigation-header i:last-of-type{
+    position: absolute;
+    left: 480px;
+    top: 70px;
+}
 
-    .navigation-header ul{
+#drop-down-menu-Home{
+    position: absolute;
+    top: 88.636px;
+    left: 74px;
+    background: rgb(0, 0, 0);
+    padding: 0;
+    width: 10em;
+
+}
+
+#drop-down-menu-Sports{
+    position: absolute;
+    top: 88.636px;
+    left: 176px;
+    background: rgb(0, 0, 0);
+    padding: 0;
+    width: 10em;
+
+}
+
+#drop-down-menu-Casino{
+    position: absolute;
+    top: 88.636px;
+    left: 284px;
+    background: rgb(0, 0, 0);
+    padding: 0;
+    width: 10em;
+
+}
+
+    #drop-down-menu-Games{
         position: absolute;
         top: 88.636px;
-        left: 389px;
+        left: 392px;
         background: rgb(0, 0, 0);
         padding: 0;
         width: 10em;
@@ -100,11 +132,6 @@
         background: rgb(255, 255, 255);
         padding: 0.05em;
         border: 2px solid rgb(163, 163, 163);
-        border-radius: 3px;
-    }
-
-    #Great\ Britain{
-        border: 2px solid rgb(0, 0, 0);
         border-radius: 3px;
     }
 
@@ -234,7 +261,7 @@ main{
         color: rgb(81, 81, 81);
     }
 
-    .logo{
+    /*.logo{
         font-family: "HelveticaInserat LT";
         background: rgb(145, 0, 0);
         color: rgb(255, 255, 255);
@@ -248,6 +275,13 @@ main{
         margin: 0.1em 0;
         font-size: 1.4em;
         font-weight: 900;
+
+    }
+*/
+    .logo img{
+        width: 4em;
+        position: relative;
+        top: 3.1em;
 
     }
 
