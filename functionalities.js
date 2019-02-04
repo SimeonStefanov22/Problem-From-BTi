@@ -3,16 +3,42 @@ $(document).ready(function () {
     $(".navigation-header ul").hide();
     $(".navigation-header i").hide();
 
-    $(".navigation-header>li:last-of-type").hover(
+    $(".navigation-header>li:nth-child(1)").hover(
         function () {
-            $(".navigation-header ul:last-of-type").show();
-            $(".navigation-header i:last-of-type").show();
-        },
+            $("#drop-down-menu-Home").show();
+            },
         function () {
-            $(".navigation-header ul:last-of-type").hide();
-            $(".navigation-header i:last-of-type").hide();
+            $("#drop-down-menu-Home").hide();
         }
     );
+
+    $(".navigation-header>li:nth-child(2)").hover(
+        function () {
+            $("#drop-down-menu-Sports").show();
+            },
+        function () {
+            $("#drop-down-menu-Sports").hide();
+        }
+    );
+
+    $(".navigation-header>li:nth-child(3)").hover(
+        function () {
+            $("#drop-down-menu-Casino").show();
+            },
+        function () {
+            $("#drop-down-menu-Casino").hide();
+        }
+    );
+
+    $(".navigation-header>li:nth-child(4)").hover(
+        function () {
+            $("#drop-down-menu-Games").show();
+            },
+        function () {
+            $("#drop-down-menu-Games").hide();
+        }
+    );
+
 
 
 
@@ -49,40 +75,23 @@ $(document).ready(function () {
         fourthLiInfo.hide();
     }
 
-
-
-
     //click flag
-     $(".flags img").on("click", function () {
+    $(".flags img").on("click", function () {
 
-         $(".flags img").css({"border": "2px solid rgb(163, 163, 163)"})
-         $(this).css({"border": "2px solid rgb(0, 0, 0)"})
-         $(this).unbind("mouseenter mouseleave");
+        $(".flags img").css({"border": "2px solid rgb(163, 163, 163)"})
+        $(this).css({"border": "2px solid rgb(0, 0, 0)"})
+        $(this).unbind("mouseenter mouseleave");
 
-     })
+    })
 
+    //hover flag
+         $(".flags img").hover(function () {
+            $(this).css({"border": "2px solid rgb(0, 0, 0)"})
+        },
+        function () {
 
+            $(this).css({"border": "2px solid rgb(163, 163, 163)"})
 
-        //hover flag
-    $(".flags img").hover(function () {
-          $(this).css({"border": "2px solid rgb(0, 0, 0)"})
-      },
-      function () {
-
-          $(this).css({"border": "2px solid rgb(163, 163, 163)"})
-
-   });
-
-
-
-
-
-
-
-
-
-
-
-
+        });
 
 })
